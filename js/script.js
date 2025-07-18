@@ -17,7 +17,7 @@ function validateForm() {
     if (nameInput.value === '') {
         alert('Please enter namine Panjenengan')
     } else {
-        document.getElementById('message-output').innerHTML = 'Matur sembah nuwon, ${name-Input} sampun diisi';
+        document.getElementById('message-output').innerHTML = 'Matur sembah nuwon, sampun diisi';
         nameInput.value = ''; // Clear the input field after submission 
     }
 }
