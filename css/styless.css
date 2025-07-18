@@ -1,9 +1,43 @@
 .banner-img {
-    height: 700px;
+    max-width: 100%;
+    height: auto;
     background-image: url(https://i.ytimg.com/vi/UJ0QSzmMYKY/maxresdefault.jpg);
     background-position: center;
 }
 
 section {
     min-height: 7500px;
+}
+
+/* Responsive Images */
+.image1, .image2 {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .profile, .about-us {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile img, .about-us img {
+    width: 70% !important; /* Mengurangi ukuran gambar */
+    margin: 0 auto 20px !important; /* Pusatkan gambar */
+  }
+  
+  .text {
+    width: 100% !important;
+    padding: 0 15px;
+  }
+}
+
+/* Tambahkan di bagian existing CSS Anda */
+.profile, .about-us {
+  display: flex;
+  flex-wrap: wrap; /* Memungkinkan elemen wrap di mobile */
+  justify-content: center;
 }
