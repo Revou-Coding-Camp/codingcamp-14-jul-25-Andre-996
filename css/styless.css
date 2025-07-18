@@ -3,3 +3,7 @@
     background-image: url(https://i.ytimg.com/vi/UJ0QSzmMYKY/maxresdefault.jpg);
     background-position: center;
 }
+
+section {
+    min-height: 7500px;
+}

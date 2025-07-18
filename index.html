@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rosi's Website</title>
 
     <!-- CSS External Link -->
     
@@ -67,11 +67,32 @@
 
          <!-- Message Us Content -->
          <section id="message-us">
-            <form>
-                
+             <header>
+                    <h2 class="text-xl font-semibold text-center my-4">Message Us</h2>
+                </header>
+
+                <div>
+                    <form>
+
+                         <div class="flex flex-col items-center">
+                            <label for="name-input" class="mb-2">Name:</label>
+                            <input type="text" id="name-input" name="name" class="border rounded p-2 mb-4 w-50">
+
+                             <button onclick="validateForm();" type="button"
+                                class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">Send
+                                Message</button>
+                         </div>
+                    </form>
+
+                    <div id="message-output" class="text-center mt-4">Result:</div>
 
 
-            </form>
+                </div>
+
+                    
+               
+
+               
 
 
          </section>
@@ -79,7 +100,9 @@
     </main>
 
     <!-- Footer Content -->
-    <footer></footer>
+    <footer>
+        <p class="text-center text-gray-600 py-4">© 2025 Rosi Company. All rights reserved.</p>
+    </footer>
 
     <!-- Java External Link -->
      <script src="js\script.js"></script>
